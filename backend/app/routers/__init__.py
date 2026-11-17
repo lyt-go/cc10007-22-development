@@ -16,6 +16,8 @@ from app.routers import realtime as router_realtime
 from app.routers import budget as router_budget
 from app.routers import lifetime as router_lifetime
 from app.routers import abvariant as router_abvariant
+from app.routers import absplit as router_absplit
+from app.routers import abmetric as router_abmetric
 from app.routers import dashboard as router_dashboard
 from app.routers import scorecard as router_scorecard
 from app.routers import cluster as router_cluster
@@ -25,4 +27,4 @@ from app.routers import pushplan as router_pushplan
 from app.routers import metricdrill as router_metricdrill
 from app.routers import tacticlib as router_tacticlib
 
-ROUTERS = [router_sequence, router_rfm, router_churn, router_recommend, router_attrmodel, router_activity, router_realtime, router_budget, router_lifetime, router_abvariant, router_dashboard, router_scorecard, router_cluster, router_comparison, router_datadrift, router_pushplan, router_metricdrill, router_tacticlib]
+ROUTERS = [router_sequence, router_rfm, router_churn, router_recommend, router_attrmodel, router_activity, router_realtime, router_budget, router_lifetime, router_abvariant, router_absplit, router_abmetric, router_dashboard, router_scorecard, router_cluster, router_comparison, router_datadrift, router_pushplan, router_metricdrill, router_tacticlib]

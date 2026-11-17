@@ -12,6 +12,8 @@ import RealtimeView from './views/realtime'
 import BudgetView from './views/budget'
 import LifetimeView from './views/lifetime'
 import AbvariantView from './views/abvariant'
+import AbsplitView from './views/absplit'
+import AbmetricView from './views/abmetric'
 import DashboardView from './views/dashboard'
 import ScorecardView from './views/scorecard'
 import ClusterView from './views/cluster'
@@ -21,7 +23,7 @@ import PushplanView from './views/pushplan'
 import MetricdrillView from './views/metricdrill'
 import TacticlibView from './views/tacticlib'
 
-const navItems = [{ label: "运营概览", path: "/" }, { label: "行为序列", path: "/sequence" }, { label: "RFM分层", path: "/rfm" }, { label: "流失预警", path: "/churn" }, { label: "智能推荐", path: "/recommend" }, { label: "归因建模", path: "/attrmodel" }, { label: "活动评估", path: "/activity" }, { label: "实时决策", path: "/realtime" }, { label: "预算分配", path: "/budget" }, { label: "LTV估算", path: "/lifetime" }, { label: "实验变体", path: "/abvariant" }, { label: "运营看板", path: "/dashboard" }, { label: "评分卡", path: "/scorecard" }, { label: "聚类分群", path: "/cluster" }, { label: "对比分析", path: "/comparison" }, { label: "数据漂移", path: "/datadrift" }, { label: "推送计划", path: "/pushplan" }, { label: "指标归因", path: "/metricdrill" }, { label: "策略库", path: "/tacticlib" }]
+const navItems = [{ label: "运营概览", path: "/" }, { label: "行为序列", path: "/sequence" }, { label: "RFM分层", path: "/rfm" }, { label: "流失预警", path: "/churn" }, { label: "智能推荐", path: "/recommend" }, { label: "归因建模", path: "/attrmodel" }, { label: "活动评估", path: "/activity" }, { label: "实时决策", path: "/realtime" }, { label: "预算分配", path: "/budget" }, { label: "LTV估算", path: "/lifetime" }, { label: "实验变体", path: "/abvariant" }, { label: "变体分流记录", path: "/absplit" }, { label: "看板指标明细", path: "/abmetric" }, { label: "运营看板", path: "/dashboard" }, { label: "评分卡", path: "/scorecard" }, { label: "聚类分群", path: "/cluster" }, { label: "对比分析", path: "/comparison" }, { label: "数据漂移", path: "/datadrift" }, { label: "推送计划", path: "/pushplan" }, { label: "指标归因", path: "/metricdrill" }, { label: "策略库", path: "/tacticlib" }]
 
 export default function App() {
   const [operator] = useState('值班管理员')
@@ -55,6 +57,8 @@ export default function App() {
           <Route path="/budget" element={<BudgetView />} />
           <Route path="/lifetime" element={<LifetimeView />} />
           <Route path="/abvariant" element={<AbvariantView />} />
+          <Route path="/absplit" element={<AbsplitView />} />
+          <Route path="/abmetric" element={<AbmetricView />} />
           <Route path="/dashboard" element={<DashboardView />} />
           <Route path="/scorecard" element={<ScorecardView />} />
           <Route path="/cluster" element={<ClusterView />} />
